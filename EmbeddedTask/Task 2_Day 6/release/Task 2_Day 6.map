@@ -211,7 +211,7 @@ END GROUP
                 0x00000078                __vector_18
                 0x00000078                __vector_20
  .text          0x0000007c       0x50 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 2_Day 6\release\main.c.o
-                0x0000007c                scheduler
+                0x0000007c                ToggleLed
  .text          0x000000cc      0x292 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 2_Day 6\release\MCAL\DIO\DIO_Program.c.o
                 0x000000cc                DIO_InitPin
                 0x00000190                DIO_WritePin

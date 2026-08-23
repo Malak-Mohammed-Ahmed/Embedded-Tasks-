@@ -11,7 +11,7 @@
         //No OF OVF Count =   ReqTime/OverFlowTime = 1000000/256 
         //                   =   3906.25 => 3907
         //Preload          =    2^Size *(1-0.y) = 256 * (1-0.25) = 192
-void scheduler ()
+void ToggleLed ()
 {
     static uint32_t count=0;
     count++;
@@ -33,7 +33,7 @@ void main()
 
 DIO_InitPin(Dio_GroupB,Dio_Pin0,Output);
 TIMER0_Init(ToggleSystemConf);
-TIMER0_SetCallBackFunction(Timer0_OverFlowInterrupt,scheduler);
+TIMER0_SetCallBackFunction(Timer0_OverFlowInterrupt,ToggleLed);
 GIE_Enable();
 TIMER0_Start(Timer0_Prescaler8);
 

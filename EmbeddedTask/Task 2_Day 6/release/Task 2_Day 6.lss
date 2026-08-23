@@ -86,7 +86,7 @@ Disassembly of section .text:
 00000078 <__bad_interrupt>:
   78:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
 
-0000007c <scheduler>:
+0000007c <ToggleLed>:
   7c:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <count.0>
   80:	90 91 61 00 	lds	r25, 0x0061	; 0x800061 <count.0+0x1>
   84:	a0 91 62 00 	lds	r26, 0x0062	; 0x800062 <count.0+0x2>
