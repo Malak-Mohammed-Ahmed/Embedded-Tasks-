@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+   1236	      0	      1	   1237	    4d5	D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\EXTI&DIO_Atmega16.elf
