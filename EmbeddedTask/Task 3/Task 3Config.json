@@ -2,7 +2,7 @@
   "projectName": "Task 3",
   "projectPath": "D:\\Courses\\NTI Embedded\\Follow_Up Tasks\\EmbeddedTask\\Task 3",
   "outputPath": "D:\\Courses\\NTI Embedded\\Follow_Up Tasks\\EmbeddedTask\\Task 3",
-  "outputName": "EXTI&DIO_Atmega16",
+  "outputName": "TASK3_DIO&EXTI",
   "target": "AVR",
   "mcu": "atmega16",
   "language": "C",
@@ -25,6 +25,6 @@
   "port": "",
   "baudRate": "115200",
   "timeout": "5000",
-  "firmwareFile": "D:\\Courses\\NTI Embedded\\Follow_Up Tasks\\EmbeddedTask\\Task 3/EXTI&DIO_Atmega16.hex",
+  "firmwareFile": "D:\\Courses\\NTI Embedded\\Follow_Up Tasks\\EmbeddedTask\\Task 3/TASK3_DIO&EXTI.hex",
   "programmer": "usbasp"
 }

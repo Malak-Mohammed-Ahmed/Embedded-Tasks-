@@ -133,7 +133,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x4d4
+.text           0x00000000      0x5ea
  *(.vectors)
  .vectors       0x00000000       0x54 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega16.o
                 0x00000000                __vector_default
@@ -203,66 +203,70 @@ END GROUP
                 0x00000078                __vector_2
                 0x00000078                __vector_15
                 0x00000078                __vector_8
-                0x00000078                __vector_14
                 0x00000078                __vector_10
                 0x00000078                __vector_16
                 0x00000078                __vector_18
                 0x00000078                __vector_20
  .text          0x0000007c       0x6e D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\main.c.o
                 0x0000007c                __vector_1
- .text          0x000000ea        0x0 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\ADC\ADC_Program.c.o
- .text          0x000000ea      0x292 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\DIO\DIO_Program.c.o
-                0x000000ea                DIO_InitPin
-                0x000001ae                DIO_WritePin
-                0x00000272                DIO_ReadPin
-                0x000002ae                DIO_TogglePin
-                0x00000306                DIO_InitGroup
-                0x00000326                DIO_WriteGroup
-                0x00000346                DIO_ReadGroup
- .text          0x0000037c       0xf8 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\EXTI\EXTI_Program.c.o
-                0x0000037c                EXTI_Init
-                0x0000042c                EXTI_Enable
-                0x00000450                EXTI_Disable
- .text          0x00000474       0x10 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\GIE\GIE_Program.c.o
-                0x00000474                GIE_Enable
-                0x0000047c                GIE_Disable
- .text          0x00000484        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
- .text          0x00000484        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
-                0x00000484                        . = ALIGN (0x2)
+ .text          0x000000ea      0x116 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\ADC\ADC_Program.c.o
+                0x000000ea                ADC_Init
+                0x00000180                ADC_ReadChannelPolling
+                0x00000194                ADC_StartConvserionInterrupt
+                0x000001a0                ADC_SetCallback
+                0x000001aa                __vector_14
+ .text          0x00000200      0x292 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\DIO\DIO_Program.c.o
+                0x00000200                DIO_InitPin
+                0x000002c4                DIO_WritePin
+                0x00000388                DIO_ReadPin
+                0x000003c4                DIO_TogglePin
+                0x0000041c                DIO_InitGroup
+                0x0000043c                DIO_WriteGroup
+                0x0000045c                DIO_ReadGroup
+ .text          0x00000492       0xf8 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\EXTI\EXTI_Program.c.o
+                0x00000492                EXTI_Init
+                0x00000542                EXTI_Enable
+                0x00000566                EXTI_Disable
+ .text          0x0000058a       0x10 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\GIE\GIE_Program.c.o
+                0x0000058a                GIE_Enable
+                0x00000592                GIE_Disable
+ .text          0x0000059a        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .text          0x0000059a        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000059a                        . = ALIGN (0x2)
  *(.text.*)
- .text.startup  0x00000484       0x4c D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\main.c.o
-                0x00000484                main
+ .text.startup  0x0000059a       0x4c D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\main.c.o
+                0x0000059a                main
  .text.libgcc.mul
-                0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.div
-                0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.fixed
-                0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.div
-                0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.prologue
-                0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.builtins
-                0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fmul
-                0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fixed
-                0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
-                0x000004d0                        . = ALIGN (0x2)
+                0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x000005e6                        . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000004d0        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
-                0x000004d0                _exit
-                0x000004d0                exit
+ .fini9         0x000005e6        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x000005e6                _exit
+                0x000005e6                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -281,17 +285,17 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000004d0        0x4 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x000005e6        0x4 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
  *(.hightext)
  *(.hightext*)
  *(.progmemx.*)
-                0x000004d4                        . = ALIGN (0x2)
+                0x000005ea                        . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
-                0x000004d4                        _etext = .
+                0x000005ea                        _etext = .
 
-.data           0x00800060        0x0 load address 0x000004d4
+.data           0x00800060        0x0 load address 0x000005ea
                 [!provide]                        PROVIDE (__data_start = .)
  *(.data)
  .data          0x00800060        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega16.o
@@ -311,28 +315,28 @@ END GROUP
                 0x00800060                        _edata = .
                 [!provide]                        PROVIDE (__data_end = .)
 
-.bss            0x00800060        0x1
+.bss            0x00800060        0x3
                 0x00800060                        PROVIDE (__bss_start = .)
  *(.bss)
  .bss           0x00800060        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega16.o
  .bss           0x00800060        0x1 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\main.c.o
- .bss           0x00800061        0x0 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\ADC\ADC_Program.c.o
- .bss           0x00800061        0x0 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\DIO\DIO_Program.c.o
- .bss           0x00800061        0x0 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\EXTI\EXTI_Program.c.o
- .bss           0x00800061        0x0 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\GIE\GIE_Program.c.o
- .bss           0x00800061        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
- .bss           0x00800061        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00800061        0x2 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\ADC\ADC_Program.c.o
+ .bss           0x00800063        0x0 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\DIO\DIO_Program.c.o
+ .bss           0x00800063        0x0 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\EXTI\EXTI_Program.c.o
+ .bss           0x00800063        0x0 D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\ATMEGA16\MCAL\GIE\GIE_Program.c.o
+ .bss           0x00800063        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .bss           0x00800063        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
  *(.bss*)
  *(COMMON)
-                0x00800061                        PROVIDE (__bss_end = .)
-                0x000004d4                        __data_load_start = LOADADDR (.data)
-                0x000004d4                        __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00800063                        PROVIDE (__bss_end = .)
+                0x000005ea                        __data_load_start = LOADADDR (.data)
+                0x000005ea                        __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800061        0x0
+.noinit         0x00800063        0x0
                 [!provide]                        PROVIDE (__noinit_start = .)
  *(.noinit .noinit.* .gnu.linkonce.n.*)
                 [!provide]                        PROVIDE (__noinit_end = .)
-                0x00800061                        _end = .
+                0x00800063                        _end = .
                 [!provide]                        PROVIDE (__heap_start = .)
                 0x00000000                        __flmap_init_label = DEFINED (__flmap_noinit_start)?__flmap_noinit_start:0x0
                 0x00000000                        __flmap = DEFINED (__flmap)?__flmap:0x0
@@ -475,5 +479,5 @@ END GROUP
 
 .debug_sup
  *(.debug_sup)
-OUTPUT(D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\EXTI&DIO_Atmega16.elf elf32-avr)
+OUTPUT(D:\Courses\NTI Embedded\Follow_Up Tasks\EmbeddedTask\Task 3\release\TASK3_DIO&EXTI.elf elf32-avr)
 LOAD linker stubs

@@ -1,9 +1,11 @@
+//Testing DIO&EXTI Drivers:
+
 #include "MCAL/EXTI/EXTI_Interface.h"
 #include "MCAL/DIO/DIO_Interface.h"
 #include "MCAL/GIE/GIE_Interface.h"
 #include <util/delay.h>
 
-//Testing DIO&EXTI Drivers: 
+ 
 void main()
 {
     DIO_InitPin(Dio_GroupA,Dio_Pin0,Output);
@@ -45,7 +47,4 @@ void main()
 
 
     }
-
-
-
 
